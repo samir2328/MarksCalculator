@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Marks Calculator</title>
+    <link rel="stylesheet" href="css/marks-calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="animated-background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
+    <div class="container">
+        <div class="calculator-header">
+            <div class="animated-icon">
+                <i class="fas fa-calculator"></i>
+            </div>
+            <h1>Exam Marks Calculator</h1>
+        </div>
+        <form id="marksForm">
+            <div class="subject-container" id="subjectContainer">
+                <div class="subject-row">
+                    <input type="text" placeholder="Subject Name" class="subject-name">
+                    <input type="number" placeholder="Marks Obtained" class="marks-obtained" min="0">
+                    <input type="number" placeholder="Total Marks" class="total-marks" min="0">
+                    <button type="button" class="remove-btn">×</button>
+                </div>
+            </div>
+            
+            <button type="button" id="addSubject">Add Subject</button>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div class="results" id="results">
+            <h2>Results</h2>
+            <div class="result-row">
+                <p>Total Marks: <span id="totalMarks">0</span></p>
+                <p>Marks Obtained: <span id="marksObtained">0</span></p>
+                <p>Percentage: <span id="percentage">0%</span></p>
+                <p>Grade: <span id="grade">-</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/marks-calculator.js"></script>
+</body>
+</html>
